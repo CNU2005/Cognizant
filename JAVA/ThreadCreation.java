@@ -2,7 +2,6 @@
 // Objective: Implement multithreading.
 public class ThreadCreation {
 
-    // Approach 1: extend Thread.
     static class PrinterThread extends Thread {
         private final String message;
 

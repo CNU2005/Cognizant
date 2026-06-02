@@ -1,5 +1,5 @@
 // Exercise 30: Pattern Matching for switch (Java 21)
-// Objective: Simplify conditional logic with pattern matching in switch expressions.
+// Objective: Simplify conditional logic with pattern matching in switch expressions.''
 public class PatternMatchingSwitch {
 
     static String describe(Object obj) {

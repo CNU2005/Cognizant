@@ -13,7 +13,7 @@ public class VirtualThreads {
 
         for (int i = 0; i < COUNT; i++) {
             final int id = i;
-            // Each virtual thread does a tiny bit of work.
+            
             threads[i] = Thread.startVirtualThread(() -> {
                 counter.incrementAndGet();
                 if (id % 20_000 == 0) {
@@ -21,8 +21,8 @@ public class VirtualThreads {
                 }
             });
         }
-
-        // Wait for all of them to finish.
+        
+        
         for (Thread t : threads) {
             t.join();
         }
